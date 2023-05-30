@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bevestig</title>
+        <script src="js/bevestig.js" type="module" defer></script>
+        <link rel="icon" href="images/movies.ico" type="image/x-icoon">
+        <link rel="stylesheet" href="css/movies.css">
+    </head>
+
+    <body>
+        <h1>Bevestig</h1>
+        <h3><span id="aantal"></span> film(s) voor <span id="naam"></span>.</h3>
+        <button id="bevestig" disabled>Bevestig</button>
+
+<!--        Lijst van de films met info erbij of zij gereserveerd zijn - OK of Uitverkocht-->
+        <ul id="filmsLijst" hidden>
+
+        </ul>
+
+        <!--        Menu -->
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">Startpagina</a>
+                </li>
+                <li>
+                    <a id="mandje" href="mandje.html" hidden>Mandje</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="storing" class="fout" hidden>Storing, contacteer helpdesk.</div>
+    </body>
+</html>

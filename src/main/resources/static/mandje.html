@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+      <meta charset="UTF-8">
+      <title>Mandje</title>
+      <script src="js/mandje.js" type="module" defer></script>
+      <link rel="icon" href="images/movies.ico" type="image/x-icoon">
+      <link rel="stylesheet" href="css/movies.css">
+  </head>
+  <body>
+      <h1>Mandje</h1>
+<!--      Lijst van de gekozen films in mandje-->
+      <table>
+          <thead>
+            <tr>
+                <th>Film</th>
+                <th>Prijs</th>
+            </tr>
+          </thead>
+
+          <tbody id="filmSet">
+
+          </tbody>
+
+          <tfoot>
+              <tr>
+                  <th>Totaal:</th>
+                  <td id="total"></td>
+              </tr>
+          </tfoot>
+      </table>
+
+<!--    Menu van onder-->
+      <nav id="menu">
+        <ul>
+          <li>
+            <a href="index.html">Startpagina</a>
+          </li>
+          <li>
+            <a href="klant.html">Klant</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="storing" class="fout" hidden>Storing, contacteer helpdesk</div>
+  </body>
+</html>

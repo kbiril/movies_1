@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Klant</title>
+    <script src="js/klant.js" type="module" defer></script>
+    <link rel="icon" href="images/movies.ico" type="image/x-icoon">
+    <link rel="stylesheet" href="css/movies.css">
+</head>
+    <body>
+
+        <h1>Klant</h1>
+        <div>
+            <label>Woord:
+                <input id="woord" required autofocus>
+                <span id="woordFout" class="fout" hidden>Verplicht</span>
+            </label>
+        </div>
+        <button id="zoek">Zoek</button>
+
+        <!--        Table van gevonden klanten die een ingegeven woord bevatten-->
+        <table id="klantenTable" hidden>
+            <thead>
+            <tr>
+                <th>naam</th>
+                <th>straat - huisnummer</th>
+                <th>postcode</th>
+                <th>gemeente</th>
+            </tr>
+            </thead>
+
+            <tbody id="klantenBody">
+            </tbody>
+
+        </table>
+        <div id="geenKlant" class="fout" hidden>Er is geen klant gevonden</div>
+
+            <!--        Menu -->
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">Startpagina</a>
+                </li>
+                <li>
+                    <a href="mandje.html">Mandje</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="storing" class="fout" hidden>Storing, contacteer helpdesk.</div>
+    </body>
+</html>

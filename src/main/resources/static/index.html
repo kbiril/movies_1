@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies</title>
+    <script src="js/index.js" type="module" defer></script>
+    <link rel="icon" href="images/movies.ico" type="image/x-icoon">
+    <link rel="stylesheet" href="css/movies.css">
+</head>
+    <body>
+        <h1>Genres</h1>
+
+<!--        Lijst van genres-->
+        <nav>
+            <ul id="genres"></ul>
+        </nav>
+
+<!--        Films van een gekozen genre-->
+        <div id="filmsPerGenre" hidden>
+            <h1 id="genreNaam"></h1>
+            <nav>
+                <ul id="films"></ul>
+            </nav>
+            <div id="filmsFout" class="fout" hidden>Er is geen film van de genre</div>
+        </div>
+
+
+        <div id="storing" class="fout" hidden>Storing, contacteer helpdesk</div>
+    </body>
+</html>
