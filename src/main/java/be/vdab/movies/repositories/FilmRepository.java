@@ -26,15 +26,6 @@ public class FilmRepository {
                     result.getBigDecimal("prijs")
             );
 
-//    private final RowMapper<FilmTitelPrijsVoorraadGereserveerdBeschikbaar> rowMapperRecord =
-//            (result, rowNum) -> new FilmTitelPrijsVoorraadGereserveerdBeschikbaar(
-//                    result.getString("titel"),
-//                    result.getBigDecimal("prijs"),
-//                    result.getInt("voorraad"),
-//                    result.getInt("gereserveerd"),
-//                    result.getInt("beschikbaar")
-//            );
-
     public List<Film> findFilmsByGenreId(long genreId) {
         var sql = """
                     select id, genreId, titel, voorraad, gereserveerd, prijs

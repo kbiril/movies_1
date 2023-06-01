@@ -1,7 +1,7 @@
 package be.vdab.movies.controllers;
 
 import be.vdab.movies.dto.NieuweReservatie;
-import be.vdab.movies.services.FilmService;
+
 import be.vdab.movies.services.ReservatieService;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;

@@ -50,7 +50,7 @@ public class Film {
     }
     public void reserveren () {
         if (gereserveerd < voorraad) {
-            gereserveerd--;
+            gereserveerd++;
         } else {
             throw new SoldOutException(titel);
         }
